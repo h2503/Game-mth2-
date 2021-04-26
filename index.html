@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE | ©H25.03</title>
+    <link rel = "icon" href = "icon.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">   
+</head>
+<body>
+    <h1>SNAKE</h1>
+    <div id="instruction">
+        <h3 style = "text-decoration: underline;">how to play?</h3>
+        <p>Feed the <span class="G">snake</span> with as many <span class="R">apples</span> as possible and watch it grow. The longer the <span class="G">snake's tail</span> grows, the higher your score and the faster it slither. If the <span class="G">snake</span> runs into its own tail, reverse or hit the surrounding wall, <span class="R">the game is over!</span></p>
+        <p>Use <span class="G">'WASD'</span> or <span class="G">'Arrow'</span> keys to turn the <span class="G">snake</span> toward <span class="R">apple.</span></p>
+        <img src="keys.jpg" style="width:15vw">
+        <h3 style = "text-decoration: underline;">Start a New Game</h3>   
+        <p>Press <span class="G">key</span> in any directions to awaken the <span class="G">snake.</span></p>
+        <p>Click <span class="G">restart</span> to start a new game</p>
+    </div>
+    <div id="scoreBoards">
+        <h2 style = "text-decoration: underline; color:yellow;">TOP 10 SCORES</h2>
+        <ol id="highScores"></ol>
+    </div>
+    <div id="buttons">
+        <button onclick="restartBtn()">RESTART</button>
+        <button onclick="sfxBtn()" id="sfx">SOUND FX</button>
+        <button id="musicBtn">MUSIC</button>
+    </div>
+    <div id="footer">©2021 Copyright _ Hafiiz Hamid _ Medium H25.03</div>
+    <audio loop src="bgm.mp3"></audio>
+    <canvas id="game" width="400" height="400"/>
+    <script src="script.js"></script>
+</body>
+</html>
